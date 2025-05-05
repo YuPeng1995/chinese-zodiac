@@ -1,0 +1,118 @@
+.animal-card {
+    background-color: #e7f0fd;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animal-name {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+.animal-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+.animal-details {
+    list-style: none;
+    width: 100%;
+}
+
+.animal-detail-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    line-height: 1.5;
+}
+
+.animal-detail-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.detail-label {
+    color: #666;
+    font-weight: 600;
+    margin-right: 8px;
+    min-width: 80px;
+}
+
+.detail-value {
+    color: #2c3e50;
+}
+
+.tab-content .animal-image {
+    width: 280px;
+    height: auto;
+}
+
+.tab-content .animal-details .animal-detail-item {
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+
+.tab-content .animal-details .animal-detail-item:last-child {
+    border-bottom: none;
+}
+
+@media (min-width:45rem) {
+    .animal-card {
+        padding: 24px;
+    }
+
+    .animal-name {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .animal-image {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 24px;
+    }
+
+    .detail-label {
+        min-width: 80px;
+    }
+
+    .tab-content .animal-image {
+        width: 500px;
+        height: auto;
+        margin-bottom: 70px;
+    }
+
+    .tab-content .animal-details .animal-detail-item {
+        flex-direction: row;
+    }
+
+    .tab-content .animal-details .animal-detail-item .detail-label {
+        min-width: 150px;
+        font-size: 22px;
+    }
+
+    .tab-content .animal-details .animal-detail-item .detail-value {
+        font-size: 22px;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animal-image {
+        transition: transform 0.3s ease;
+    }
+
+    .animal-image:hover {
+        transform: scale(1.05);
+    }
+}

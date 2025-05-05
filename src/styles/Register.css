@@ -1,0 +1,102 @@
+#register-main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    place-items: center;
+    margin: 2rem;
+}
+
+#register-form {
+    grid-column: span 12;
+    margin: 0.5rem 0 8rem 0;
+    padding: 1rem;
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+#register-main .required {
+    color: #20615b;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.form-input-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.checkbox-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#wantsResults {
+    max-width: 10%;
+}
+
+#wantsResults,
+#menu {
+    cursor: pointer;
+}
+
+.form-submit-button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #20615b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-submit-button:hover {
+    background-color: #1a1831;
+}
+
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.error,
+.form-error {
+    color: red;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 45rem) {
+    #register-form {
+        min-width: 800px;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #name,
+    #email,
+    #confirmEmail {
+        min-width: 350px;
+    }
+
+    #menu {
+        min-width: 200px;
+    }
+}
