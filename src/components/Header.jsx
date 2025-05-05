@@ -12,7 +12,7 @@ export default function Header({ changePath }) {
             <a id="skiplink" href="#main-content" aria-label="Skip to main content">Skip to content</a>
             {/* Site logo with link to homepage */}
             <a href="/" aria-label="Home">
-                <img id="logo" src="images/logo.png"
+                <img id="logo" src={`${import.meta.env.BASE_URL}images/logo.png`}
                     alt="Symbolic Chinese dragon for the Chinese Zodiac" />
             </a>
             {/* Site title */}

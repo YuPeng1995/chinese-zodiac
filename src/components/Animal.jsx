@@ -10,7 +10,7 @@ export default function Animal({ animal, noDescription }) {
             <h2 className="animal-name">{animal.name}</h2>
             <img
                 className="animal-image"
-                src={`images/${animal.name.toLowerCase()}.png`}
+                src={`${import.meta.env.BASE_URL}images/${animal.name.toLowerCase()}.png`}
                 alt={`${animal.name} zodiac animal`}
             />
             <ul className="animal-details">
