@@ -22,6 +22,13 @@ function App() {
 
   // Add browser history listener
   useEffect(() => {
+    const pathname = document.location.pathname;
+    // Set initial path based on current URL
+    if (pathname === '/chinese-zodiac/') {
+      setPath('/');
+    } else {
+      setPath(pathname);
+    }
     // Update path when browser back/forward buttons are used
     const handlePageChange = () => setPath(document.location.pathname);
     window.addEventListener('popstate', handlePageChange);
